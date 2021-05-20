@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/demo-product-frontend/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/demo-product-frontend/static/js/main.e5606f27.chunk.js",
+    "main.js.map": "/demo-product-frontend/static/js/main.e5606f27.chunk.js.map",
+    "runtime-main.js": "/demo-product-frontend/static/js/runtime-main.d32aa350.js",
+    "runtime-main.js.map": "/demo-product-frontend/static/js/runtime-main.d32aa350.js.map",
+    "static/js/2.16ce9e39.chunk.js": "/demo-product-frontend/static/js/2.16ce9e39.chunk.js",
+    "static/js/2.16ce9e39.chunk.js.map": "/demo-product-frontend/static/js/2.16ce9e39.chunk.js.map",
+    "static/js/3.c77f1f4c.chunk.js": "/demo-product-frontend/static/js/3.c77f1f4c.chunk.js",
+    "static/js/3.c77f1f4c.chunk.js.map": "/demo-product-frontend/static/js/3.c77f1f4c.chunk.js.map",
+    "index.html": "/demo-product-frontend/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/demo-product-frontend/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.16ce9e39.chunk.js.LICENSE.txt": "/demo-product-frontend/static/js/2.16ce9e39.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/demo-product-frontend/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d32aa350.js",
+    "static/js/2.16ce9e39.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.e5606f27.chunk.js"
+  ]
+}
