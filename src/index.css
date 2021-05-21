@@ -5,10 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 .banner{
   background: url(./assets/Products.png) no-repeat;
@@ -16,24 +12,71 @@ code {
   background-position-x: center;
   background-size: 100%;
   padding: 0 0 20px 0;
+  position: relative;
 }
+
+.banner .banner-text{
+  font-family: DVB-TTBhimaEN;
+  font-weight: 500;
+  font-size: 70px;
+  padding-left: 100px;
+  position: absolute;
+  bottom: 100px;
+}
+
+@media only screen and (max-width: 1528px)  {
+  .banner{height: 500px;}
+}
+
+@media only screen and (max-width: 900px)  {
+  .banner{height: 400px;}
+  .banner .banner-text{
+    font-size: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  .banner{height: 200px;}
+  .banner .banner-text{
+    font-size: 20px;
+    padding-left: 10px;
+    bottom: 100px;
+  }
+}
+
+
 
 .navbar .nav-link{
   margin: 0 20px;
 }
 .filter-list {
   min-width: 260px;
+  box-shadow: 0px 0px 16px #4343431A;
 }
+.filter-list .card{
+  border-radius: 10px;
+}
+.filter-list .card-body{
+  padding: 0;
+}
+
 .filter-list .card-title{
   color: #CE0024;
   font-weight: bold;
+  margin-top: 10px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(212, 212, 212) ;
 }
 .filter-list .card ul{
   padding: 0;
 }
+.filter-list .card .card-text{
+  margin-left: 30px;
+}
 .filter-list .card li{
   list-style: none;
-  margin: 15px 0;
+  margin: 15px 0 15px 20px;
   width: 180px;
 }
 
@@ -57,17 +100,17 @@ code {
 	border: 1px solid #cacece;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 	padding: 9px;
-	border-radius: 3px;
+	border-radius: 6px;
 	display: inline-block;
 	position: relative;
 }
 
 .filter-list .card li>input:checked:after {
 	content: '\2714';
-	font-size: 14px;
+	font-size: 12px;
 	position: absolute;
 	top: 0px;
-	left: 3px;
+	left: 5px;
 	color: #ffffff;
 }
 
@@ -82,8 +125,9 @@ code {
   background: #F1F5F8;
   border-radius: 20px;
   border: none;
-  height: 500px;
+  height: 400px;
   margin: 10px 0;
+  overflow-y: auto;
 }
 
 .footer{
@@ -100,25 +144,41 @@ code {
   display: inline;
 }
 
+
+.contact>div{
+  display: inline-block;
+}
+
+.contact{
+  width: 170px;
+  margin: 0 10px;
+}
+
 .email{
   background-image: url(./assets/email.svg);
   display: inline-block;
   margin-right: 10px;
+  height: 42px;
+  width: 42px;
+  background-size: 100%;
 }
 
 .phone{
   background-image: url(./assets/phone.svg);
   display: inline-block;
   margin-right: 10px;
+  height: 42px;
+  width: 42px;
+  background-size: 100%;
 }
 
-.email,.phone,.insta,.fb,.ld,.yt{
-  height: 50px;
-  width: 50px;
+.insta,.fb,.ld,.yt{
+  height: 55px;
+  width: 55px;
   background-size: 99%;
 }
 .insta,.fb,.ld,.yt{
-  margin: 50px 20px;
+  margin: 40px 30px;
 }
 
 .insta{
@@ -145,16 +205,17 @@ code {
   padding: 0 15px;
   border-right: 1px solid #fff;
 }
-.footer ul li:nth-last-child(){
+.footer ul li:nth-child(4){
   border-right: 1px solid transparent;
 }
 
-.contact{
-  width: 200px;
-}
 
 .product-image{
   height: 100px;
   width: 100px;
   margin: 20px;
+}
+
+.available{
+  color: #14693D;
 }

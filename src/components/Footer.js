@@ -5,12 +5,12 @@ function Footer() {
         <footer className="footer">
             <div className="container pt-5">
                 <div className="row justify-content-center">
-                <div className="d-flex contact">
-                    <div className="email"></div>
+                <div className="contact">
+                    <span className="email"></span>
                     <div>Email id<br/>xyz@laxmi.com</div>
                 </div>
-                <div className="d-flex contact">
-                    <div className="phone"></div>
+                <div className=" contact">
+                    <span className="phone"></span>
                     <div>Phone no.<br/>123456789</div>
                 </div>
                 </div>
