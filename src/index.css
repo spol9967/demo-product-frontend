@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, 'Helvetica';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,153 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.banner{
+  background: url(./assets/Products.png) no-repeat;
+  height: 800px;
+  background-position-x: center;
+  background-size: 100%;
+  padding: 0 0 20px 0;
+}
+
+.navbar .nav-link{
+  margin: 0 20px;
+}
+.filter-list {
+  min-width: 260px;
+}
+.filter-list .card-title{
+  color: #CE0024;
+  font-weight: bold;
+}
+.filter-list .card ul{
+  padding: 0;
+}
+.filter-list .card li{
+  list-style: none;
+  margin: 15px 0;
+  width: 180px;
+}
+
+.filter-list .card li>label{
+  margin-left: 10px;
+  position: relative;
+  top: -5px;
+}
+.filter-list .card li>input:checked{
+  background: #14693D;
+}
+.filter-list .card li>input:checked + label{
+  color: #14693D;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.filter-list .card li>input {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.filter-list .card li>input:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #ffffff;
+}
+
+.product-title{
+  text-align: center;
+  color: #14693D;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.product-list .card{
+  background: #F1F5F8;
+  border-radius: 20px;
+  border: none;
+  height: 500px;
+  margin: 10px 0;
+}
+
+.footer{
+  background: #62d398;
+  color: #fff;
+  height: 420px;
+  background-image: url(./assets/leaff-1.png), url(./assets/leaff.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.footer li{
+  list-style: none;
+  display: inline;
+}
+
+.email{
+  background-image: url(./assets/email.svg);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.phone{
+  background-image: url(./assets/phone.svg);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.email,.phone,.insta,.fb,.ld,.yt{
+  height: 50px;
+  width: 50px;
+  background-size: 99%;
+}
+.insta,.fb,.ld,.yt{
+  margin: 50px 20px;
+}
+
+.insta{
+  background-image: url(./assets/insta.svg);
+}
+
+.fb{
+  background-image: url(./assets/fb.svg);
+}
+
+.ld{
+  background-image: url(./assets/ld.svg);
+}
+
+.yt{
+  background-image: url(./assets/yt.svg);
+}
+
+.footer .row:nth-child(1){
+  margin-top: 100px;
+}
+
+.footer li{
+  padding: 0 15px;
+  border-right: 1px solid #fff;
+}
+.footer ul li:nth-last-child(){
+  border-right: 1px solid transparent;
+}
+
+.contact{
+  width: 200px;
+}
+
+.product-image{
+  height: 100px;
+  width: 100px;
+  margin: 20px;
 }
