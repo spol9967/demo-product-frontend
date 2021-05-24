@@ -23,7 +23,6 @@ function Content() {
       setfilterList(products);
     } else {
       // filteredList = products.filter(item =>activeFilter.includes(item.categories));
-      console.log(filterList)
       setfilterList(
         products.filter((item) => activeFilter.includes(item.categories))
       );

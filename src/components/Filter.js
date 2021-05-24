@@ -17,7 +17,6 @@ function Filter(props) {
                   checked={props.activeFilter.includes("all")}
                   onChange={(e) => {
                     props.onChange(e.target.id);
-                    console.log(props.activeFilter);
                   }}
                 />
                 <label className="form-check-label" htmlFor="all">
