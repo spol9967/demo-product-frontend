@@ -3,7 +3,7 @@ import React from "react";
 function Filter(props) {
   return (
     <div className="filter-list">
-      <div className="card p-5">
+      <div className="card">
         <div className="card-body">
           <h5 className="card-title">FILTER BY</h5>
           <div className="card-text">

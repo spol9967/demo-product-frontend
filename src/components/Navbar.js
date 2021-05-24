@@ -1,21 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Navbar() {
+  const [toggleMenu,setToggle] = useState(false)
   return (
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light pt-5 pb-5 font-weight-bold ">
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={()=>setToggle(!toggleMenu)}
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style={toggleMenu ? { display: 'block', transition: '0.3s height ease-in', height: 'auto' } : { display: 'none' }}>
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="/">

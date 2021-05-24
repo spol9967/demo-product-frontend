@@ -82,7 +82,7 @@ function Content() {
                   filterList.map((product) => {
                     return (
                       <div className="col-md-6" key={product._id}>
-                        <div className="card p-3">
+                        <div className="card">
                           <div className="card-body text-center">
                             <img
                               src={product.imageuri}
