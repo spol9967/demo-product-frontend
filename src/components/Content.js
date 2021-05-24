@@ -17,13 +17,13 @@ function Content() {
 
     if (
       activeFilter.length === 0 ||
-      activeFilter.length === filterList.length ||
       activeFilter.includes("all")
     ) {
       // filteredList = products;
       setfilterList(products);
     } else {
       // filteredList = products.filter(item =>activeFilter.includes(item.categories));
+      console.log(filterList)
       setfilterList(
         products.filter((item) => activeFilter.includes(item.categories))
       );
@@ -44,10 +44,8 @@ function Content() {
   const onChange = (filter) => {
     if (filter === "ALL") {
       if (activeFilter.length === filterList.length) {
-        //   this.setState({ activeFilter: [] });
         setactiveFilter([]);
       } else {
-        //   this.setState({ activeFilter: filterList.map(filter => filter.value) });
         setactiveFilter(filterList.map((filter) => filter.categories));
       }
     } else {
