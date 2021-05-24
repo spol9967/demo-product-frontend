@@ -36,7 +36,6 @@ function Content() {
       if (!newCategory.includes(product.categories)) {
         newCategory.push(product.categories);
         setCategories(newCategory);
-        console.log(categories);
       }
     });
   };

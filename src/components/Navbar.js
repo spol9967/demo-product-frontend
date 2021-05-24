@@ -4,7 +4,7 @@ function Navbar() {
   const [toggleMenu,setToggle] = useState(false)
   return (
     <div className="container-fluid">
-      <nav className="navbar navbar-expand-lg navbar-light pt-5 pb-5 font-weight-bold ">
+      <nav className="navbar navbar-expand-lg navbar-light font-weight-bold ">
         <button
           class="navbar-toggler"
           type="button"
